@@ -1,0 +1,25 @@
+{
+  "name": "plantme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/stylesheet.scss stylesheets/stylesheet.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urielmunoz/Plant.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urielmunoz/Plant.me/issues"
+  },
+  "homepage": "https://github.com/urielmunoz/Plant.me#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
