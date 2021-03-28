@@ -20,6 +20,7 @@
   "homepage": "https://github.com/urielmunoz/Plant.me#readme",
   "dependencies": {
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "normalize.css": "^8.0.1"
   }
 }
