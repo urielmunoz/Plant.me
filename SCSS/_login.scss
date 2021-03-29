@@ -1,0 +1,161 @@
+
+.login__background{
+   grid-column: 1 / span 5;
+    z-index: 1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 90vh;
+   
+    }
+    .login__background--video{
+        transform: rotateY(180deg);
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        min-width: 100%; 
+        min-height: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+      }
+
+    .login__section {
+        grid-column: 7 / span 4;
+        grid-row: 1 /span 9;
+        background-color: #ffffff;
+        z-index: 20;
+        -webkit-box-shadow: 2px 2px 30px rgba(0,0,0,0.75); 
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.75);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+            .login__title { 
+                font-size: 3vmax;
+                color: #68953e;
+                font-family: 'mulish';
+                font-weight: 600;
+                padding-top: 10vh;
+                margin-bottom: 5vh;
+                margin-left: 4vw;
+            }
+            
+            .login__form {
+                display: flex;
+                flex-direction: column;
+                width: 45vw;
+                max-width: 30vw;
+                margin-left: 4vw;
+            }
+
+                .login__div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding-top: 3vw;
+                }
+                    
+                    .login__label {
+                        font-family: 'mulish';
+                        font-size: 1,5vh;
+                        margin-top: .3vw;
+                    }
+
+                    .login__input {
+                        margin-left: 1.8vw;
+                        font-family: 'mulish';
+                        height: 2.5vh;
+                        width: 65%;
+                        font-size: 1,5vh;
+                        margin-top: 1vw;
+                        outline: none;
+                        border: none;
+                        font-weight: lighter;
+                        font-size: 1.5rem;
+                        border-bottom: 1px solid $secondary_grey;
+                    }
+                        .login__input:focus{
+                            animation-duration: .5s;
+                            animation-name: itgrows;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
+                            animation-timing-function: ease-in;
+                        } 
+
+
+                .login__slider{
+                    
+                    display:flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding-top: 2vw;
+                }
+
+                    .login--slider__label{
+                        font-family: 'mulish';
+                        font-size: 1,5vh;
+                        margin-top: .3vw;
+                        font-weight: bold;
+                    }
+   
+                    .login--slider--button{
+                        -webkit-appearance: none;
+                        margin-left: 1.8vw;
+                        height: 2.5vh;
+                        width: 65%;
+                        margin-top: .5vw;
+                    }
+
+                      input[type=range]::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: .5vh;
+                        cursor: pointer;
+                        background: $primary_green;
+                      }
+                      
+                      input[type=range]:focus::-webkit-slider-runnable-track {
+                        background: $primary_green;
+                      }
+                      
+
+                      
+
+    
+    
+    
+    
+    
+    .form--select {
+    border: none;
+    height: 3vh;
+    border-bottom: 1px solid #bfbdbd;
+    border-radius: 0px;
+    
+    }
+
+
+    
+    .contactus form div .btn-primary {
+    background-color: #5d8a32;
+    border-radius:38px;
+    color:#f0f0f0;
+    font-size:1vmax;
+    padding:19px;
+    text-decoration:none;
+    font-family: 'mulish';
+    font-weight: lighter;
+    margin-left: 40%;
+    margin-top:10vh;
+    border: solid 0 px;
+    align-self: center;
+    text-justify: center;
+    text-align: center;
+    }
+    .contactus form div .btn-primary:hover{
+    background-color: #68953e;
+    }

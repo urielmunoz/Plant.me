@@ -78,7 +78,7 @@
 
         main {
             grid-area: main;
-            background-color: #f0f0f0;
+            background-color: $primary_grey;
             display: grid;
             grid-template-columns: repeat(10,9.6vw);
             grid-template-rows: repeat(5, 20vh);
