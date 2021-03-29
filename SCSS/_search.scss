@@ -1,0 +1,156 @@
+.search__searchbar{
+    grid-column: 1;
+    grid-row: 2; 
+    background-color: $primary_grey;
+    border:none;
+    padding: 0;
+    width: 5vw;
+    height: 15vh;
+    padding: 0;
+    margin-top: 15vh;
+    margin-left: 10vh;
+    font-family: 'mulish';
+    outline: none;
+    font-size: 10vh;
+    color: $secondary_grey;
+    font-weight: lighter;
+    border-bottom: 2px solid $secondary_grey;
+    }
+
+    .search__searchbar--label{
+        grid-row: 4;
+        grid-column: 1 / span 4;
+        font-family: 'mulish';
+        margin-top: 1vh;
+        padding-left: 10vw;
+        font-weight: lighter;
+        font-size: 2vh;
+        color: $secondary_grey;
+        }
+    
+    .search__image--preview{
+        grid-column: 2;
+        grid-row: 5;
+        max-width: 10vw;
+        max-height: auto;
+    }
+    .search__image--Background{
+        grid-column: 8/ 11;
+        grid-row: 5 / 11;
+        max-width: 30vw;
+        opacity: 45%;
+    } 
+    .search__button {
+    grid-row: 4;
+    grid-column: 4 / span 4;
+    border: 0;
+ 
+    padding:19px;
+    text-decoration:none;
+    align-self: center;
+    text-justify: center;
+    text-align: center;
+    font-family: 'mulish';
+    font-weight: lighter;
+    margin-left: 26vw;
+    margin-top:3vh;
+    }
+    
+
+    .search__searchbar:focus {
+        animation-duration: .5s;
+        animation-name: itgrows;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        } 
+        
+        @keyframes itgrows
+        {
+        0%  {width: 0;}
+        10% {width: 6.5}
+        20% {width: 13vw;}
+        30% {width: 19.5vw;}
+        40% {width: 26vw;}
+        50% {width: 32.5vw;}
+        60% {width: 39vw;}
+        70% {width: 45.5vw;}
+        80% {width: 52vw;}
+        90% {width: 58.5vw;}
+        100% {width: 65vw;}
+        
+        }
+    
+
+
+ @media screen and (max-width:799px) {
+     
+    .search__searchbar{
+
+        background-color: #f0f0f0;
+        border:none;
+        padding: 0;
+        width: 10vw;
+        height: 15vh;
+        padding: 0;
+        margin-top: 15vh;
+        margin-left: 1vh;
+        font-family: 'mulish';
+        outline: none;
+        font-size: 8vh;
+        color: #bfbdbd;
+        font-weight: lighter;
+        border-bottom: 2px solid #bfbdbd;
+        }
+
+        .search__searchbar--label{
+            font-family: 'mulish';
+            margin-top: 6vh;
+            padding-left: 2vw;
+            font-weight: lighter;
+            font-size: 2vh;
+            color: #bfbdbd;
+            }
+
+    .search__image--Background{
+        max-width: 100vw;
+        margin-top: 5vh;    
+    }
+
+
+    .search__image--preview{ display: none;
+    }
+    
+    .search__button {
+        margin-top: 8vh;
+        margin-left: 50vw;
+        background-color: #5d8a32;
+        border-radius:33px;
+        cursor:pointer;
+        color:#f0f0f0;
+        font-family:Verdana;
+        font-size:2vmax;
+        font-family: 'mulish';
+        font-weight:lighter;
+        padding:21px 39px;
+        text-decoration:none;
+        align-self: center;
+        text-align: center;
+
+    
+        @keyframes itgrows
+        {
+        0%  {width: 0;}
+        10% {width: 6.5}
+        20% {width: 13vw;}
+        30% {width: 19.5vw;}
+        40% {width: 26vw;}
+        50% {width: 32.5vw;}
+        60% {width: 39vw;}
+        70% {width: 45.5vw;}
+        80% {width: 52vw;}
+        90% {width: 65.5vw;}
+        100% {width: 85vw;}
+        }
+    }
+    }
