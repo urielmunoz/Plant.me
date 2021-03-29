@@ -1,33 +1,176 @@
 
-/*Import Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap');
 
-//Color Variables//
+
+/*Fonts*/
+
+    //imported Fonts
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap');
+
+
+    //font variables (not used yet)
+ 
+       .text--header{
+            margin: 0.67em 0;
+            font-family: 'mulish';
+            font-size: xx-large;
+            font-weight: 700;
+            text-decoration: none; 
+            }
+
+
+/*Color Variables*/
 
     //Greys
-    $primary_grey: #f0f0f0;
-    $secondary_grey:#bfbdbd;
-    $text_grey: #534f4f;
+
+        $primary_grey: #f0f0f0;
+        $secondary_grey:#bfbdbd;
+        $text_grey: #534f4f;
 
     //greens
-    $primary_green: #5d8a32;
-    $secondary_green: #68953e;
 
-//Button Variables these are compiled CSSs that function
-//traversally on the Website as variables but are not variables.
+        $primary_green: #5d8a32;
+        $secondary_green: #68953e;
 
-    .button--big{
-    background-color: $primary_green;
-    border-radius:33px;
-    cursor:pointer;
-    color: $primary_grey;
-    font-size:1vmax;
-    font-family: 'mulish';
-    font-weight:lighter;
-    }
-        .button--big:hover{
-            background-color: $secondary_green;
+/*Button Variables these are compiled CSSs that function
+traversally on the Website as variables but are not variables.*/
+
+    //main big button used for main interactions.
+
+        .button--big{
+        background-color: $primary_green;
+        border-radius:40px;
+        padding:22px 40px;
+        cursor:pointer;
+        color: $primary_grey;
+        border: 1px solid $secondary_green;
+        font-size:1rem;
+        font-family: 'mulish';
+        font-weight:lighter;
+        text-decoration:none;
+        align-self: center;
+        text-align: center;
         }
+
+            .button--big:hover{
+                background-color: transparent; 
+                border: 1px solid $secondary_green;
+                color:$text_grey;
+                transition-duration: 0.4s;
+            }
+
+
+/*one very much pain in the butt slider. AHA. you will not be de defeat of me!
+ this comes from css-tricks but has been heavily modded to fit my page
+ kudos to them anyways. also. I chose not to style it to IE. 
+ if you use IE you seriously need an intervention. 
+ think about what you're doing, it's not too late!*/
+
+    //cleaning out browser styles
+
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 80%;
+            margin: 18px;
+                }
+                input[type=range]:hover {
+                    outline: none;
+                
+                    }
+
+                input[type=range]:focus {
+                    outline: none;
+                    }
+
+    // the slider button
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 1px solid $secondary_green;
+            height: 24px;
+            width: 12px;
+            border-radius: 6px;
+            background: $secondary_green;
+            cursor: pointer;
+            margin-top:-8px;
+            }
+            input[type=range]::-webkit-slider-thumb:hover{
+                background: $primary_grey;
+                transition-duration: 0.4s;
+                }
+
+    // the track for the slider
+
+        input[type=range]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 8.4px;
+                cursor: pointer;
+                background: $primary_grey;
+                border-radius: 8px;
+            
+            }
+                
+            input[type=range]:hover::-webkit-slider-runnable-track {
+                background: $primary_green;
+                transition-duration: 0.4s;
+                }
+
+
+
+
+
+/*Reusable Keyframes*/
+
+    
+    @keyframes loadingfadein {
+
+        0%{ opacity: 0%;}
+        10% {opacity:  10%;}
+        20%{ opacity: 20%;}
+        30% {opacity:  30%;}
+        40%{ opacity: 40%;}
+        50% {opacity:  50%;}
+        60% { opacity: 60%;}
+        70% {opacity:  70%;}
+        80% {opacity:  80%;}
+        90% {opacity:  90%;}
+        100% {opacity: 100%;}
+        } //used to make the hole page fade into existence.
+
+    @keyframes itgrows {
+
+        0%  {width: 0%;}
+        10% {width: 6.5%;}
+        20% {width: 13%;}
+        30% {width: 19.5%;}
+        40% {width: 26%;}
+        50% {width: 32.5%;}
+        60% {width: 39%;}
+        70% {width: 45.5%;}
+        80% {width: 52%;}
+        90% {width: 58.5%;}
+        100% {width: 65%;}
+        }  //used for input text bars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  //   background-color: #5d8a32;
@@ -43,29 +186,5 @@
 
 
 
-//font variables not used yet
-    .text--header{
-        margin: 0.67em 0;
-        font-family: 'mulish';
-        font-size: xx-large;
-        font-weight: 700;
-        text-decoration: none; 
-    }
 
 
-
-//keyframes shared all over
-
-    @keyframes itgrows {
-        0%  {width: 0%;}
-        10% {width: 6.5%;}
-        20% {width: 13%;}
-        30% {width: 19.5%;}
-        40% {width: 26%;}
-        50% {width: 32.5%;}
-        60% {width: 39%;}
-        70% {width: 45.5%;}
-        80% {width: 52%;}
-        90% {width: 58.5%;}
-        100% {width: 65%;}
-    }

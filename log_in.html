@@ -11,85 +11,84 @@
 
 <body class="body--mediaquery">  
 
-  <header class="header--mediaquery">
+    <header class="header--mediaquery">
 
-    <a href="index.html" ><img src="images/logo.png" alt="Home" class="header__logo"></a>
+      <a href="index.html" ><img src="images/logo.png" alt="Home" class="header__logo"></a>
 
-    <ul class="header__menu">
-      <li><a href="index.html" class="header__menu--icon"><i class="fas fa-2x fa-seedling header__menu--icon_fa"></i></a></li>
-      <li><a href="log_in.html" class="header__menu--icon"><i class="fas fa-2x fa-user header__menu--icon_fa"></i></a></li>
-      <li><a href="marketplace.html" class="header__menu--icon"><i class="fas fa-2x fa-shopping-basket header__menu--icon_fa"></i></a></li>
-      <li><a href="search.html" class="header__menu--icon"><i class="fas fa-2x fa-search header__menu--icon_fa"></i></a></li>
-      <li><a href="contact_us.html" class="header__menu--icon"><i class="fas fa-2x fa-paper-plane header__menu--icon_fa"></i></a></li>
-    </ul>
+      <ul class="header__menu">
+        <li><a href="index.html" class="header__menu--icon"><i class="fas fa-2x fa-seedling header__menu--icon_fa"></i></a></li>
+        <li><a href="log_in.html" class="header__menu--icon"><i class="fas fa-2x fa-user header__menu--icon_fa"></i></a></li>
+        <li><a href="marketplace.html" class="header__menu--icon"><i class="fas fa-2x fa-shopping-basket header__menu--icon_fa"></i></a></li>
+        <li><a href="search.html" class="header__menu--icon"><i class="fas fa-2x fa-search header__menu--icon_fa"></i></a></li>
+        <li><a href="contact_us.html" class="header__menu--icon"><i class="fas fa-2x fa-paper-plane header__menu--icon_fa"></i></a></li>
+      </ul>
 
-  </header>
-            
+    </header>            
 
-  <main class="main--mediaquery">
+    <main class="main--mediaquery">
 
-    <section class="login__background">
-      <video autoplay loop class="login__background--video">
-        <source src="images/sign_up.mp4" type="video/mp4">
-      </video>
-    </section>
+      <section class="login__background">
+        <video autoplay loop class="login__background--video">
+          <source src="images/sign_up.mp4" type="video/mp4">
+        </video>
+      </section>
 
-    <section class="login__section">
+      <section class="login__section">
 
-      <h1 class="login__title">Log in</h1>  
+        <h1 class="login__title">Log in</h1>  
 
-      <form class="login__form">
+        <form class="login__form">
 
-        <div class="login__div">
+          <div class="login__div--inputs">
 
-          <label for="name" class="login__label">Nombre</label>
-          <input type="text" class="login__input" id="formInputText">
-       
-        </div>
-
-        <div class="login__div">
-
-          <label for="password" class="login__label">Password</label>
-          <input type="password" class="login__input" id="login__password--input"> 
-       
-        </div>
-       
-
-        <div class="login__slider">
-       
-          <label for="slider" class="login--slider--label">Prove you're human by sliding right!</label>
-          <input type="range" class="login--slider--button" id="login--slider--button"> 
-
-        </div>             
-
-        <div class="login__button">
-
-          <input type="log in" class="login__button button--big">
+            <label for="name" class="login__label">Nombre</label>
+            <input type="text" class="login__input" id="formInputText">
         
-        </div>
+          </div>
 
-        <div class="login__checkbox">
+          <div class="login__div--inputs">
 
-          <input class="login__checkbox--input" type="checkbox" id="login__checkbox--input">
-          <label class="login__checkbox--label" for="checkbox">Remember Me</label>
-
-        </div>  
+            <label for="password" class="login__label">Password</label>
+            <input type="password" class="login__input" id="login__password--input"> 
         
-      </form>
+          </div>    
 
-      <a href="#">not registered? sign up now!</a>
+          <div class="login__div--slider">
+        
+            <label for="slider" class="login__slider--label">Prove you're human by sliding right!</label>
+            <input type="range" class="login__slider--button range__slider" id="login--slider--button"> 
 
-    </section>
+          </div>       
 
-  </main>
+          <div class="login__div--checkbox">
 
-  <footer class="footer--mediaquery">
-  <ul class="footer__menu">
-    <li><a href="#" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-pinterest-square footer__menu--icon_fa"></i></a></li>
-    <li><a href="https://www.instagram.com/muinquietto/" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-instagram footer__menu--icon_fa"></i></i></a></li>
-    <li><a href="#" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-facebook footer__menu--icon_fa"></i></i></a></li>
-  </ul>  
-  </footer>
+            <input class="login__checkbox--input" type="checkbox" id="login__checkbox--input">
+            <label class="login__checkbox--label" for="checkbox">Remember Me</label>
+            <a class="login__checkbox--link" href="#">Not registered? <span class="login__checkbox--link--span">Sign up</span></a>
+
+          </div>  
+
+          <div class="login__div--button">
+
+            <button class="login__button button--big"> log in </button>
+          
+          </div>
+
+        </form>
+
+        
+
+      </section>
+
+    </main>
+
+    <footer class="footer--mediaquery search__footer">
+    <ul class="footer__menu">
+      <li><a href="#" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-pinterest-square footer__menu--icon_fa"></i></a></li>
+      <li><a href="https://www.instagram.com/muinquietto/" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-instagram footer__menu--icon_fa"></i></i></a></li>
+      <li><a href="#" target="_blank" class="footer__menu--icon"><i class="fab fa-1x fa-facebook footer__menu--icon_fa"></i></i></a></li>
+    </ul>  
+    </footer>
 
 </body>
 

@@ -1,23 +1,100 @@
-/*Import Fonts*/
+/*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap");
-.button--big {
-  background-color: #5d8a32;
-  border-radius: 33px;
-  cursor: pointer;
-  color: #f0f0f0;
-  font-size: 1vmax;
-  font-family: 'mulish';
-  font-weight: lighter; }
-
-.button--big:hover {
-  background-color: #68953e; }
-
 .text--header {
   margin: 0.67em 0;
   font-family: 'mulish';
   font-size: xx-large;
   font-weight: 700;
   text-decoration: none; }
+
+/*Color Variables*/
+/*Button Variables these are compiled CSSs that function
+traversally on the Website as variables but are not variables.*/
+.button--big {
+  background-color: #5d8a32;
+  border-radius: 40px;
+  padding: 22px 40px;
+  cursor: pointer;
+  color: #f0f0f0;
+  border: 1px solid #68953e;
+  font-size: 1rem;
+  font-family: 'mulish';
+  font-weight: lighter;
+  text-decoration: none;
+  align-self: center;
+  text-align: center; }
+
+.button--big:hover {
+  background-color: transparent;
+  border: 1px solid #68953e;
+  color: #534f4f;
+  transition-duration: 0.4s; }
+
+/*one very much pain in the butt slider. AHA. you will not be de defeat of me!
+ this comes from css-tricks but has been heavily modded to fit my page
+ kudos to them anyways. also. I chose not to style it to IE. 
+ if you use IE you seriously need an intervention. 
+ think about what you're doing, it's not too late!*/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 80%;
+  margin: 18px; }
+
+input[type=range]:hover {
+  outline: none; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #68953e;
+  height: 24px;
+  width: 12px;
+  border-radius: 6px;
+  background: #68953e;
+  cursor: pointer;
+  margin-top: -8px; }
+
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #f0f0f0;
+  transition-duration: 0.4s; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 8px; }
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+  background: #5d8a32;
+  transition-duration: 0.4s; }
+
+/*Reusable Keyframes*/
+@keyframes loadingfadein {
+  0% {
+    opacity: 0%; }
+  10% {
+    opacity: 10%; }
+  20% {
+    opacity: 20%; }
+  30% {
+    opacity: 30%; }
+  40% {
+    opacity: 40%; }
+  50% {
+    opacity: 50%; }
+  60% {
+    opacity: 60%; }
+  70% {
+    opacity: 70%; }
+  80% {
+    opacity: 80%; }
+  90% {
+    opacity: 90%; }
+  100% {
+    opacity: 100%; } }
 
 @keyframes itgrows {
   0% {
@@ -64,6 +141,10 @@ a {
   font-family: 'mulish'; }
 
 body {
+  -webkit-animation: loadingfadein 1.4s;
+  animation-timing-function: ease-in; }
+
+body {
   margin: 0;
   margin-top: 0;
   margin-left: 0;
@@ -81,7 +162,7 @@ header {
   background-color: #ffffff;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
-  z-index: 10;
+  z-index: 20;
   display: grid;
   grid-template-columns: 4vw;
   grid-template-rows: 10vh 85vh;
@@ -120,7 +201,8 @@ footer {
   grid-template-columns: 96vw;
   grid-template-rows: 2vh;
   align-content: center;
-  justify-content: start; }
+  justify-content: start;
+  z-index: 10; }
 
 .footer__menu {
   display: grid;
@@ -181,7 +263,6 @@ footer {
   .footer__menu--icon_fa {
     color: black; } }
 
-/*Index Main*/
 .index__image--background {
   max-width: 48vw;
   grid-column: 6 / 11;
@@ -189,18 +270,15 @@ footer {
   overflow: hidden; }
 
 .index__title {
+  font-family: 'mulish';
   font-size: 5vmax;
   grid-row: 4;
   grid-column: 2 / span 5;
   color: #534f4f; }
 
 .index__button {
-  grid-row: 7;
-  grid-column: 3;
-  padding: 21px 39px;
-  text-decoration: none;
-  align-self: center;
-  text-align: center; }
+  grid-row: 6;
+  grid-column: 3; }
 
 @media screen and (max-width: 799px) {
   .index__image--background {
@@ -268,17 +346,7 @@ footer {
 
 .search__button {
   grid-row: 4;
-  grid-column: 4 / span 4;
-  border: 0;
-  padding: 19px;
-  text-decoration: none;
-  align-self: center;
-  text-justify: center;
-  text-align: center;
-  font-family: 'mulish';
-  font-weight: lighter;
-  margin-left: 26vw;
-  margin-top: 3vh; }
+  grid-column: 7; }
 
 .search__searchbar:focus {
   animation-duration: .5s;
@@ -355,17 +423,17 @@ footer {
       width: 85vw; } } }
 
 .login__background {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   grid-column: 1 / span 5;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-  height: 90vh; }
+  height: 100vh; }
 
 .login__background--video {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -399,11 +467,11 @@ footer {
 .login__form {
   display: flex;
   flex-direction: column;
-  width: 45vw;
   max-width: 30vw;
-  margin-left: 4vw; }
+  margin-left: 4vw;
+  justify-content: center; }
 
-.login__div {
+.login__div--inputs {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -411,7 +479,7 @@ footer {
 
 .login__label {
   font-family: 'mulish';
-  font-size: 1,5vh;
+  font-size: 1rem;
   margin-top: .3vw; }
 
 .login__input {
@@ -419,7 +487,7 @@ footer {
   font-family: 'mulish';
   height: 2.5vh;
   width: 65%;
-  font-size: 1,5vh;
+  font-size: 1rem;
   margin-top: 1vw;
   outline: none;
   border: none;
@@ -434,55 +502,51 @@ footer {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in; }
 
-.login__slider {
+.login__div--slider {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-top: 2vw; }
 
-.login--slider__label {
+.login__slider--label {
   font-family: 'mulish';
-  font-size: 1,5vh;
+  font-size: 1rem;
   margin-top: .3vw;
-  font-weight: bold; }
+  margin-bottom: 2vh; }
 
-.login--slider--button {
-  -webkit-appearance: none;
-  margin-left: 1.8vw;
-  height: 2.5vh;
-  width: 65%;
-  margin-top: .5vw; }
+.login__div--checkbox {
+  margin-top: 3vh;
+  align-self: flex-start;
+  margin-left: .1vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 10vw; }
 
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: .5vh;
-  cursor: pointer;
-  background: #5d8a32; }
+.login__checkbox--input {
+  margin-top: .25vh;
+  margin-right: .3vw; }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #5d8a32; }
-
-.form--select {
-  border: none;
-  height: 3vh;
-  border-bottom: 1px solid #bfbdbd;
-  border-radius: 0px; }
-
-.contactus form div .btn-primary {
-  background-color: #5d8a32;
-  border-radius: 38px;
-  color: #f0f0f0;
-  font-size: 1vmax;
-  padding: 19px;
-  text-decoration: none;
+.login__checkbox--label {
   font-family: 'mulish';
   font-weight: lighter;
-  margin-left: 40%;
-  margin-top: 10vh;
-  border: solid 0 px;
-  align-self: center;
-  text-justify: center;
-  text-align: center; }
+  color: #534f4f;
+  margin-bottom: 1vh; }
 
-.contactus form div .btn-primary:hover {
-  background-color: #68953e; }
+.login__checkbox--link {
+  font-family: 'mulish';
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #534f4f;
+  margin-bottom: 1vh; }
+
+.login__checkbox--link--span:hover {
+  color: #68953e;
+  font-weight: bolder;
+  font-size: 1rem; }
+
+.login__div--button {
+  display: flex;
+  align-self: flex-end;
+  max-width: 10vw;
+  margin-top: 3vh;
+  margin-right: 5vw; }
