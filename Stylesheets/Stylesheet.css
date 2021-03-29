@@ -1,0 +1,203 @@
+/*Import Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap");
+.button--big {
+  background-color: #5d8a32;
+  border-radius: 33px;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 1vmax;
+  font-family: 'mulish';
+  font-weight: lighter; }
+
+.button--big:hover {
+  background-color: #68953e; }
+
+.text--header {
+  margin: 0.67em 0;
+  font-family: 'mulish';
+  font-size: xx-large;
+  font-weight: 700;
+  text-decoration: none; }
+
+* {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0; }
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+li {
+  list-style: none; }
+
+a {
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-family: 'mulish'; }
+
+body {
+  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4vw repeat(3, 32vw);
+  grid-template-rows: repeat(4, 25vh) 4vh;
+  grid-template-areas: "header main main main" "header main main main" "header main main main" "header main main main" "header footer footer footer"; }
+
+header {
+  grid-area: header;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 4vw;
+  grid-template-rows: 10vh 85vh;
+  justify-items: center; }
+
+.header__logo {
+  max-width: 3.5vw;
+  justify-content: center; }
+
+.header__menu {
+  display: grid;
+  grid-template-columns: 2vw;
+  justify-items: center;
+  grid-template-rows: repeat(5, 8vh);
+  padding-left: 0; }
+
+.header__menu--icon {
+  color: #f0f0f0; }
+
+.header__menu--icon:hover {
+  color: #5d8a32; }
+
+main {
+  grid-area: main;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: repeat(10, 9.6vw);
+  grid-template-rows: repeat(5, 20vh);
+  justify-items: stretch;
+  align-self: end; }
+
+footer {
+  grid-area: footer;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 96vw;
+  grid-template-rows: 2vh;
+  align-content: center;
+  justify-content: start; }
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: repeat(10, 3vw);
+  margin-left: 2vw; }
+
+.footer__menu--icon {
+  color: #534f4f; }
+
+.footer__menu--icon:hover {
+  color: #5d8a32; }
+
+@media screen and (max-width: 799px) {
+  .body--mediaquery {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh; }
+  .header--mediaquery {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #5d8a32;
+    z-index: 10;
+    justify-content: center; }
+  .header__logo {
+    max-width: 20vw;
+    justify-content: center;
+    margin-left: 38vw;
+    padding-top: 1vh; }
+  .header__menu {
+    display: flex;
+    width: 90vw;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    padding-bottom: 2vh; }
+  .header__menu--icon_fa {
+    color: #f0f0f0;
+    font-size: medium; }
+  .main--mediaquery {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #f0f0f0; }
+  .footer--mediaquery {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 4vh; }
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    font-size: large; }
+  .footer__menu--icon_fa {
+    color: black; } }
+
+/*Index Main*/
+.index__image--background {
+  max-width: 48vw;
+  grid-column: 6 / 11;
+  grid-row: 5 / 11;
+  overflow: hidden; }
+
+.index__title {
+  font-size: 5vmax;
+  grid-row: 4;
+  grid-column: 2 / span 5;
+  color: #534f4f; }
+
+.index__button {
+  grid-row: 7;
+  grid-column: 3;
+  padding: 21px 39px;
+  text-decoration: none;
+  align-self: center;
+  text-align: center; }
+
+@media screen and (max-width: 799px) {
+  .index__image--background {
+    max-width: 100vw;
+    margin-top: 5vh; }
+  .index__title {
+    margin-top: 15vh;
+    font-size: 5vmax;
+    color: #534f4f;
+    margin-left: 10vw; }
+  .index__button {
+    margin-top: 5vh;
+    background-color: #5d8a32;
+    border-radius: 33px;
+    cursor: pointer;
+    color: #f0f0f0;
+    font-family: Verdana;
+    font-size: 2vmax;
+    font-family: 'mulish';
+    font-weight: lighter;
+    padding: 21px 39px;
+    text-decoration: none;
+    align-self: center;
+    text-align: center; } }
