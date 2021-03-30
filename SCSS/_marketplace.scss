@@ -1,0 +1,124 @@
+
+.marketplace__title{
+    
+}
+
+.marketplace__main--grid{
+    grid-template-columns: repeat(20,4.8vw);
+    grid-template-rows: repeat(10, 10vh);
+    justify-items: stretch;
+    align-self: end;
+    grid-row-gap: 0vh;
+    grid-column-gap: 2vw;
+}
+
+.marketplace__article--small {
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 15vw;
+    max-height: auto;
+    background-color: white;
+    }
+
+        .marketplace__article--small:hover{
+            box-shadow: $main_shadow;
+            -webkit-box-shadow: $main_shadow;
+    
+        }
+
+    .marketplace__article1 {
+        
+        grid-row: 3 / span 3;
+        grid-column: 2 / span 3;   
+        }
+
+    .marketplace__article3 {    
+        grid-row: 7 / span 3;
+        grid-column: 2 / span 3;
+        }
+
+    .marketplace__article5 {  
+        grid-row: 7 /span 3;
+        grid-column: 12 / span 3;
+        }
+
+        .marketplace__article--img--size1 {
+            height: 10vw;
+            width: auto;
+            margin-top: -5vh;
+            overflow: hidden;
+
+            }
+
+        .marketplace__article--title--size1 {
+            font-family: 'mulish';
+            }
+
+            .marketplace__article--description--size1 {
+                font-family: 'mulish';
+            }
+
+.marketplace__article--medium {
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .marketplace__article4 {    
+        grid-row: 7 / span 3;
+        grid-column: 5 / span 7;
+            }
+
+            .marketplace__article--img--size3 {
+                overflow: hidden;
+                }
+            .marketplace__article--title--size3{
+                font-family: 'mulish';
+                }
+
+                .marketplace__article--description--size3 {
+                    font-family: 'mulish';
+                }
+
+.marketplace__article--big {
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .marketplace__article2 {    
+        grid-row: 3 / span 3;
+        grid-column: 5 / span 9;
+        
+        }
+        
+        .marketplace__article--img--size2 {
+            overflow: hidden;
+            }
+        .marketplace__article--title--size2{
+            font-family: 'mulish';
+            }
+
+            .marketplace__article--description--size2 {
+                font-family: 'mulish';
+            }
+
+
+
+.marketplace__link {
+grid-row: 10;
+grid-column: 7 / span 3;
+align-self: end;
+margin-bottom: 2vh;
+margin-left: 2vw;
+font-size: .5rem
+    }
+
+
+   
+

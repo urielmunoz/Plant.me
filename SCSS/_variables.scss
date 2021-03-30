@@ -9,7 +9,14 @@
 
     //font variables (not used yet)
  
-       .text--header{
+    .text__title--h1{
+            font-size: 5vmax;
+            color: $secondary_green;
+            font-family: 'mulish';
+            font-weight: 600;
+        }
+    
+        .text--header{
             margin: 0.67em 0;
             font-family: 'mulish';
             font-size: xx-large;
@@ -227,6 +234,7 @@ traversally on the Website as variables but are not variables.*/
 
 //Shadow Variables//
 
+    $main_shadow: 2px 2px 30px rgba(0,0,0,0.75); 
 
 
 
