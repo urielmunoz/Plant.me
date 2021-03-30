@@ -1,5 +1,6 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap");
+/*Some  variables some are scss others are css styles I use all across the site.*/
 .text__title--h1 {
   font-size: 3vmax;
   color: #68953e;
@@ -13,9 +14,6 @@
   font-weight: 700;
   text-decoration: none; }
 
-/*Color Variables*/
-/*Button Variables these are compiled CSSs that function
-traversally on the Website as variables but are not variables.*/
 .button--big {
   background-color: #5d8a32;
   border-radius: 40px;
@@ -33,7 +31,7 @@ traversally on the Website as variables but are not variables.*/
 .button--big:hover {
   background-color: transparent;
   border: 1px solid #68953e;
-  color: #534f4f;
+  color: #464242;
   transition-duration: 0.4s; }
 
 @media screen and (max-width: 799px) {
@@ -208,8 +206,8 @@ body {
 header {
   grid-area: header;
   background-color: #ffffff;
-  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 30px #574c4cea;
+  box-shadow: 2px 2px 30px #574c4cea;
   z-index: 20;
   display: grid;
   grid-template-columns: 4vw;
@@ -258,7 +256,7 @@ footer {
   margin-left: 2vw; }
 
 .footer__menu--icon {
-  color: #534f4f; }
+  color: #464242; }
 
 .footer__menu--icon:hover {
   color: #5d8a32; }
@@ -319,11 +317,9 @@ footer {
   overflow: hidden; }
 
 .index__title {
-  font-family: 'mulish';
-  font-size: 5vmax;
   grid-row: 4;
   grid-column: 2 / span 5;
-  color: #534f4f; }
+  color: #464242; }
 
 .index__button {
   grid-row: 6;
@@ -336,7 +332,7 @@ footer {
   .index__title {
     margin-top: 15vh;
     font-size: 5vmax;
-    color: #534f4f;
+    color: #464242;
     margin-left: 10vw; }
   .index__button {
     margin-top: 5vh;
@@ -500,17 +496,13 @@ footer {
   grid-row: 1 /span 9;
   background-color: #ffffff;
   z-index: 20;
-  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 30px #574c4cea;
+  box-shadow: 2px 2px 30px #574c4cea;
   display: flex;
   flex-direction: column;
   height: 100vh; }
 
 .login__title {
-  font-size: 3vmax;
-  color: #68953e;
-  font-family: 'mulish';
-  font-weight: 600;
   padding-top: 10vh;
   margin-bottom: 5vh;
   margin-left: 4vw; }
@@ -580,14 +572,14 @@ footer {
 .login__checkbox--label {
   font-family: 'mulish';
   font-weight: lighter;
-  color: #534f4f;
+  color: #464242;
   margin-bottom: 1vh; }
 
 .login__checkbox--link {
   font-family: 'mulish';
   font-weight: lighter;
   font-size: 1rem;
-  color: #534f4f;
+  color: #464242;
   margin-bottom: 1vh; }
 
 .login__checkbox--link--span:hover {
@@ -637,16 +629,54 @@ footer {
     margin-top: 1vh;
     margin-right: 3vw; } }
 
+/*this section sets and orders the elementsin the grid.*/
 .marketplace__main--grid {
-  grid-template-columns: repeat(20, 4.8vw);
-  grid-template-rows: repeat(10, 10vh);
+  grid-template-columns: repeat(40, 2.4vw);
+  grid-template-rows: repeat(20, 5vh);
   justify-items: stretch;
   align-self: end;
-  grid-row-gap: 0vh;
-  grid-column-gap: 2vw; }
+  grid-row-gap: vh;
+  grid-column-gap: 0vw; }
+
+.marketplace__title {
+  grid-column: 2;
+  grid-row: 1;
+  width: 40vw;
+  margin-top: 3vh; }
+
+.marketplace__article1 {
+  grid-row: 4 / span 6;
+  grid-column: 5 / span 5; }
+
+.marketplace__article2 {
+  grid-row: 4 / span 6;
+  grid-column: 11 / span 25; }
+
+.marketplace__article3 {
+  grid-row: 12 / span 6;
+  grid-column: 5 / span 5; }
+
+.marketplace__article4 {
+  grid-row: 12 / span 6;
+  grid-column: 11 / span 19; }
+
+.marketplace__article5 {
+  grid-row: 12 /span 6;
+  grid-column: 31 / span 5; }
+
+.marketplace__link {
+  grid-row: 19;
+  grid-column: 18 / span 6;
+  align-self: end;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  font-size: .5rem; }
+
+.marketplace__link:hover {
+  font-weight: bolder;
+  color: #5d8a32; }
 
 .marketplace__article--small {
-  outline: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -656,20 +686,12 @@ footer {
   background-color: white; }
 
 .marketplace__article--small:hover {
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75); }
+  box-shadow: 8px 9px 12px 2px #bfbdbd;
+  -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd; }
 
-.marketplace__article1 {
-  grid-row: 3 / span 3;
-  grid-column: 2 / span 3; }
-
-.marketplace__article3 {
-  grid-row: 7 / span 3;
-  grid-column: 2 / span 3; }
-
-.marketplace__article5 {
-  grid-row: 7 /span 3;
-  grid-column: 12 / span 3; }
+.marketplace__article--img--div--size1 {
+  overflow: hidden;
+  display: flex; }
 
 .marketplace__article--img--size1 {
   height: 10vw;
@@ -684,17 +706,24 @@ footer {
   font-family: 'mulish'; }
 
 .marketplace__article--medium {
-  outline: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: white; }
 
-.marketplace__article4 {
-  grid-row: 7 / span 3;
-  grid-column: 5 / span 7; }
+.marketplace__article--medium:hover {
+  box-shadow: 8px 9px 12px 2px #bfbdbd;
+  -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd; }
+
+.marketplace__article--img--div--size3 {
+  overflow: hidden;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+  display: flex; }
 
 .marketplace__article--img--size3 {
-  overflow: hidden; }
+  height: 100%;
+  width: auto; }
 
 .marketplace__article--title--size3 {
   font-family: 'mulish'; }
@@ -703,28 +732,27 @@ footer {
   font-family: 'mulish'; }
 
 .marketplace__article--big {
-  outline: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: white; }
 
-.marketplace__article2 {
-  grid-row: 3 / span 3;
-  grid-column: 5 / span 9; }
+.marketplace__article--big:hover {
+  box-shadow: 8px 9px 12px 2px #bfbdbd;
+  -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd; }
+
+.marketplace__article--img--div--size2 {
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  display: flex; }
 
 .marketplace__article--img--size2 {
-  overflow: hidden; }
+  height: 100%;
+  width: auto; }
 
 .marketplace__article--title--size2 {
   font-family: 'mulish'; }
 
 .marketplace__article--description--size2 {
   font-family: 'mulish'; }
-
-.marketplace__link {
-  grid-row: 10;
-  grid-column: 7 / span 3;
-  align-self: end;
-  margin-bottom: 2vh;
-  margin-left: 2vw;
-  font-size: .5rem; }

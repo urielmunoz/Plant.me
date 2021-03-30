@@ -7,15 +7,36 @@
         @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,900;1,200&display=swap');
 
 
-    //font variables (not used yet)
+
+
+/*Some  variables some are scss others are css styles I use all across the site.*/
+
+    //Greys
+
+        $primary_grey: #f0f0f0;
+        $secondary_grey:#bfbdbd;
+        $tertiary_grey:#574c4cea;
+        $text_grey: #464242;
+
+    //greens
+
+        $primary_green: #5d8a32;
+        $secondary_green: #68953e;
+
+    //Shadow Variables
+
+        $main_shadow: 2px 2px 30px $tertiary_grey;
+        $article_shadow: 8px 9px 12px 2px $secondary_grey; 
+   
+    //text style variables 
  
-    .text__title--h1{
-            font-size: 5vmax;
+        .text__title--h1{
+            font-size: 3vmax;
             color: $secondary_green;
             font-family: 'mulish';
             font-weight: 600;
         }
-    
+
         .text--header{
             margin: 0.67em 0;
             font-family: 'mulish';
@@ -24,24 +45,7 @@
             text-decoration: none; 
             }
 
-
-/*Color Variables*/
-
-    //Greys
-
-        $primary_grey: #f0f0f0;
-        $secondary_grey:#bfbdbd;
-        $text_grey: #534f4f;
-
-    //greens
-
-        $primary_green: #5d8a32;
-        $secondary_green: #68953e;
-
-/*Button Variables these are compiled CSSs that function
-traversally on the Website as variables but are not variables.*/
-
-    //main big button used for main interactions.
+    //buttons used for main interactions.
 
         .button--big{
         background-color: $primary_green;
@@ -229,12 +233,8 @@ traversally on the Website as variables but are not variables.*/
  //color:#f0f0f0;
  //font-family:Verdana;
  //font-size:2vmax;
- //font-weight:bold;
+ //font-weight:bold;rgba(0,0,0,0.75)
  //       
-
-//Shadow Variables//
-
-    $main_shadow: 2px 2px 30px rgba(0,0,0,0.75); 
 
 
 

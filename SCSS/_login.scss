@@ -28,8 +28,8 @@
     grid-row: 1 /span 9;
     background-color: #ffffff;
     z-index: 20;
-    -webkit-box-shadow: 2px 2px 30px rgba(0,0,0,0.75); 
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.75);
+    -webkit-box-shadow: $main_shadow; 
+    box-shadow: $main_shadow;
     display: flex;
     flex-direction: column;
     height: 100vh;
