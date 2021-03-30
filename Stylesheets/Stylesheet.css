@@ -756,3 +756,152 @@ footer {
 
 .marketplace__article--description--size2 {
   font-family: 'mulish'; }
+
+.contactus_img_background {
+  filter: grayscale(100%);
+  z-index: 1;
+  width: 96vw;
+  height: 100vh; }
+
+.contactus_section {
+  grid-column: 7 / span 4;
+  grid-row: 1 /span 9;
+  background-color: #ffffff;
+  z-index: 1;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.form_title {
+  font-size: 3vmax;
+  color: #68953e;
+  font-family: 'mulish';
+  font-weight: 600;
+  padding-top: 10vh;
+  margin-bottom: 5vh;
+  margin-left: 4vw; }
+
+.section_form {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  max-width: 30vw;
+  margin-left: 4vw; }
+
+.section_form-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 1vh; }
+
+.form--label {
+  font-family: 'mulish';
+  font-size: 1,5vh;
+  margin-top: .3vw; }
+
+.form_div--text {
+  display: flex;
+  flex-direction: column; }
+
+.form_div--adress {
+  display: flex;
+  flex-direction: column; }
+
+.form_div--textarea {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1vh;
+  margin-top: 1vh; }
+  .form_div--textarea .form_textarea--input {
+    border: none;
+    border-bottom: 1px solid #bfbdbd;
+    max-height: 10vh;
+    max-width: 25vw;
+    font-family: 'mulish'; }
+  .form_div--textarea .form_textarea--label {
+    font-family: 'mulish';
+    font-size: 1,5vh;
+    margin-top: .3vw; }
+
+.contactus_section #formInputText {
+  border: none;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh;
+  font-family: 'mulish';
+  margin-top: .5vh;
+  margin-bottom: .3vh;
+  width: 10vw; }
+
+.form_div--text .form_input_text {
+  border: none;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh;
+  font-family: 'mulish';
+  margin-top: .5vh;
+  margin-bottom: .3vh;
+  width: 10vw; }
+
+.form_div--adress #formInputTextAdress {
+  border: none;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh;
+  font-family: 'mulish';
+  margin-top: .5vh;
+  margin-bottom: .3vh;
+  width: 25vw; }
+
+.form_div--adress #formInputTextAdress2 {
+  border: none;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh;
+  font-family: 'mulish';
+  margin-top: .5vh;
+  margin-bottom: .3vh;
+  width: 25vw; }
+
+.form_div--text #formInputCity {
+  border: none;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh;
+  font-family: 'mulish';
+  margin-bottom: .3vh;
+  width: 13vw; }
+
+.form_div--zip #formInputZip {
+  border: none;
+  width: 4vw;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px;
+  height: 3vh; }
+
+.form--select {
+  border: none;
+  height: 3vh;
+  border-bottom: 1px solid #bfbdbd;
+  border-radius: 0px; }
+
+.contactus form div .btn-primary {
+  background-color: #5d8a32;
+  border-radius: 38px;
+  color: #f0f0f0;
+  font-size: 1vmax;
+  padding: 19px;
+  text-decoration: none;
+  font-family: 'mulish';
+  font-weight: lighter;
+  margin-left: 40%;
+  margin-top: 10vh;
+  border: solid 0 px;
+  align-self: center;
+  text-justify: center;
+  text-align: center; }
+
+.contactus form div .btn-primary:hover {
+  background-color: #68953e; }
