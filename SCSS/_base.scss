@@ -33,8 +33,9 @@
 
     body{
         -webkit-animation: loadingfadein 1.4s;
+        animation: loadingfadein 1.4s;
         animation-timing-function: ease-in;
-            }
+        } //fade in animation
 
     body {
             margin: 0;

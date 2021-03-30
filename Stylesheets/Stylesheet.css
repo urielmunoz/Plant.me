@@ -30,6 +30,20 @@ traversally on the Website as variables but are not variables.*/
   color: #534f4f;
   transition-duration: 0.4s; }
 
+@media screen and (max-width: 799px) {
+  .button--big {
+    background-color: #5d8a32;
+    border-radius: 40px;
+    padding: 12px 20px;
+    color: #f0f0f0;
+    border: 1px solid #68953e;
+    font-size: .5rem;
+    font-family: 'mulish';
+    font-weight: lighter;
+    text-decoration: none;
+    align-self: center;
+    text-align: center; } }
+
 /*one very much pain in the butt slider. AHA. you will not be de defeat of me!
  this comes from css-tricks but has been heavily modded to fit my page
  kudos to them anyways. also. I chose not to style it to IE. 
@@ -64,7 +78,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  background: #f0f0f0;
+  background: #bfbdbd;
   border-radius: 8px; }
 
 input[type=range]:hover::-webkit-slider-runnable-track {
@@ -142,6 +156,7 @@ a {
 
 body {
   -webkit-animation: loadingfadein 1.4s;
+  animation: loadingfadein 1.4s;
   animation-timing-function: ease-in; }
 
 body {
@@ -360,7 +375,7 @@ footer {
     background-color: #f0f0f0;
     border: none;
     padding: 0;
-    width: 10vw;
+    width: 85%;
     height: 15vh;
     padding: 0;
     margin-top: 15vh;
@@ -550,3 +565,38 @@ footer {
   max-width: 10vw;
   margin-top: 3vh;
   margin-right: 5vw; }
+
+@media screen and (max-width: 799px) {
+  .login__background {
+    display: none; }
+  .login__title {
+    font-size: 3vmax;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 4vw; }
+  .login__section {
+    height: 85vh;
+    z-index: 10;
+    background: #f0f0f0; }
+  .login__form {
+    justify-content: center;
+    max-width: 90vw; }
+  .login__input {
+    margin-top: 3vh;
+    width: 85vw;
+    background-color: transparent;
+    font-size: .8rem;
+    margin-bottom: 3vh; }
+  .login__div--checkbox {
+    margin-top: 3vh;
+    align-self: flex-start;
+    margin-left: .1vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40vw; }
+  .login__div--button {
+    display: flex;
+    align-self: flex-end;
+    max-width: 20vw;
+    margin-top: 1vh;
+    margin-right: 3vw; } }

@@ -149,13 +149,53 @@
                 }    
         
 
-    
-    
-    
-    
-    
-    
-    
+@media screen and (max-width:799px) {
+    .login__background{
+        
+        display: none;
+        }
 
+        .login__title { 
+            font-size: 3vmax;
+            padding-top: 5vh;
+            margin-bottom: 5vh;
+            margin-left: 4vw;
+        }
+    
+        .login__section {
 
-  
+            height: 85vh;
+            z-index: 10;
+            background: $primary_grey;
+        }
+    
+        .login__form {
+            justify-content: center;
+            max-width: 90vw;
+        }
+            .login__input {
+                margin-top: 3vh;
+                width:85vw;
+                background-color: transparent;
+                font-size: .8rem;
+                margin-bottom: 3vh;
+            }
+
+        .login__div--checkbox {
+            margin-top: 3vh;
+            align-self: flex-start;
+            margin-left: .1vw;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 40vw;
+            }
+            
+            .login__div--button{
+                display: flex;
+                align-self: flex-end;
+                max-width: 20vw;
+                margin-top: 1vh;
+                margin-right: 3vw;
+
+                }    
+    }

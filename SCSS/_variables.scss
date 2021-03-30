@@ -57,7 +57,21 @@ traversally on the Website as variables but are not variables.*/
                 color:$text_grey;
                 transition-duration: 0.4s;
             }
-
+        @media screen and (max-width:799px) {
+            .button--big{
+                background-color: $primary_green;
+                border-radius:40px;
+                padding:12px 20px;
+                color: $primary_grey;
+                border: 1px solid $secondary_green;
+                font-size:.5rem;
+                font-family: 'mulish';
+                font-weight:lighter;
+                text-decoration:none;
+                align-self: center;
+                text-align: center;
+                }
+            } //button media query
 
 /*one very much pain in the butt slider. AHA. you will not be de defeat of me!
  this comes from css-tricks but has been heavily modded to fit my page
@@ -104,7 +118,7 @@ traversally on the Website as variables but are not variables.*/
                 width: 100%;
                 height: 8.4px;
                 cursor: pointer;
-                background: $primary_grey;
+                background: $secondary_grey;
                 border-radius: 8px;
             
             }
