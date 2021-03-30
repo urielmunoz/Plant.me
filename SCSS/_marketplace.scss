@@ -4,42 +4,42 @@
 .marketplace__main--grid{
     grid-template-columns: repeat(40,2.4vw);
     grid-template-rows: repeat(20, 5vh);
-    justify-items: stretch;
     align-self: end;
     grid-row-gap: vh;
     grid-column-gap: 0vw;
     }
 
         .marketplace__title{
-            grid-column: 2;
-            grid-row: 1;
+            grid-column: 3;
+            grid-row: 3;
+            align-self: end;
             width: 40vw;
             margin-top: 3vh;        
             }
 
         .marketplace__article1 {
-            grid-row: 4 / span 6;
-            grid-column: 5 / span 5;   
+            grid-row: 5 / span 6;
+            grid-column: 7 / span 5;   
             }
 
         .marketplace__article2 {    
-            grid-row: 4 / span 6;
-            grid-column: 11 / span 25;
+            grid-row: 5 / span 6;
+            grid-column: 13 / span 21;
             }
 
         .marketplace__article3 {    
             grid-row: 12 / span 6;
-            grid-column: 5 / span 5;
+            grid-column: 7 / span 5;
             }
 
         .marketplace__article4 {    
             grid-row: 12 / span 6;
-            grid-column: 11 / span 19;
+            grid-column: 13 / span 15;
             }
 
         .marketplace__article5 {  
             grid-row: 12 /span 6;
-            grid-column: 31 / span 5;
+            grid-column: 29 / span 5;
             }
 
         .marketplace__link {
@@ -53,123 +53,200 @@
                 .marketplace__link:hover{
                     font-weight: bolder;
                     color: $primary_green;
+                    transform: scaleX(25vw);
                 }
 
-    
-                
 
 
+// this class controls all text design as text is an anchor.
+    .marketplace__article--link{
+            font-family: 'mulish';
+            font-size: 100%;
+            color:$text_grey;
+            }
+            .marketplace__article--link:hover{
+                color:$primary_green;                
+                }
 
 
+//this section controls articles and its designs and animations
+//there are 3 types of articles: small, medium and big.
 
+    //small articles are positions 1, 3 and 5
 
+        .marketplace__article--small {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            max-width: auto;
+            max-height: auto;
+            background-color: white;
+            transition: all .2s ease-in-out;
+            }
+            
+                .marketplace__article--small:hover{
+                    box-shadow: $article_shadow;
+                    -webkit-box-shadow: $article_shadow;
+                    transform: scale(1.1);
 
+                    }
 
+     //big article is position 2
 
-                
+        .marketplace__article--big {
 
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background: white;
+            transition: all .2s ease-in-out;
+                }
+                .marketplace__article--big:hover{
+                    box-shadow: $article_shadow;
+                    -webkit-box-shadow: $article_shadow;
+                    transform: scaleX(25vw);
+                    transform: scale(1.1);
+                    }
+        
+    //medium article is position 4
 
-
-
-.marketplace__article--small {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    max-width: 15vw;
-    max-height: auto;
-    background-color: white;
-    }
-     
-        .marketplace__article--small:hover{
-            box-shadow: $article_shadow;
-            -webkit-box-shadow: $article_shadow;
+        .marketplace__article--medium {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background: white;
+            transition: all .2s ease-in-out;
 
             }
-    
-    .marketplace__article--img--div--size1{
-        overflow: hidden;
-        display: flex;
-        }
+                .marketplace__article--medium:hover{
+                    box-shadow: $article_shadow;
+                    -webkit-box-shadow: $article_shadow;
+                    transform: scale(1.1);
+                    }  
 
-            .marketplace__article--img--size1 {
-                height: 10vw;
-                width: auto;
-                margin-top: -5vh;
-                overflow: hidden;
-                }
-    
+//this section controls article images and the boxes in which they're contained.
 
+
+//ARTICLE 1, 3 & 5 SMALL SIZE
+
+    //this controls images of articles 1, 3 and 5 (small)
+
+        .marketplace__article--img--div--size1{
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 1.5vh;
+            }
+
+                .marketplace__article--img--size1 {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 20% 20%;
+                    }
+    //this controls text of articles 1, 3 and 5 (small)
 
         .marketplace__article--title--size1 {
-            font-family: 'mulish';
+            grid-column: 1 / span 3 ;
+            grid-row: 4;
+            align-self: center;  
+            margin-left: .8vw;
+            margin-right: .4vw;
+            font-weight: bold;
+            font-size: 90%;
+            color: $text_grey;
             }
 
             .marketplace__article--description--size1 {
-                font-family: 'mulish';
-            }
-
-.marketplace__article--medium {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background: white
-    }
-        .marketplace__article--medium:hover{
-            box-shadow: $article_shadow;
-            -webkit-box-shadow: $article_shadow;
-            }  
-         
-            .marketplace__article--img--div--size3 {
-                overflow: hidden;
                 grid-column: 1 / span 3;
-                grid-row: 1 / span 3;
-                display: flex;
-
+                grid-row: 5 / span 2;
+                align-self: start;
+                margin-left: 1.5vw;
+                margin-right: .5vw;
+                margin-top: 1vh;
+                font-size: 75%;
             }
-                .marketplace__article--img--size3 {
-                    height: 100%;
-                    width:auto
-                    }
-            .marketplace__article--title--size3{
-                font-family: 'mulish';
-                }
 
-                .marketplace__article--description--size3 {
-                    font-family: 'mulish';
-                }
+//ARTICLE 2, BIG SIZE
 
-.marketplace__article--big {
-    
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background: white
-     }
-        .marketplace__article--big:hover{
-            box-shadow: $article_shadow;
-            -webkit-box-shadow: $article_shadow;
-            }
+     //this controls image of article 2 (big)... i know.. counter-intuitive as f***.
         
         .marketplace__article--img--div--size2 {
             overflow: hidden;
             grid-column: 1 / span 2;
             grid-row: 1 / span 3;
             display: flex;
-        }
+            }
 
             .marketplace__article--img--size2 {
                 height: 100%;
-                width:auto
+                width: 100%;
+                object-fit: cover;
+                object-position: 50%;
                 }
-
+    
+     //this controls text article 2 (big).
+        
         .marketplace__article--title--size2{
-            font-family: 'mulish';
+            grid-row: 1;
+            align-self: end;
+            grid-column: 4;
+            font-weight: bolder;
             }
 
             .marketplace__article--description--size2 {
-                font-family: 'mulish';
+                grid-row: 2;
+                align-self: center;
+                grid-column: 4 / span 2;
+                justify-self: start;
+                margin-left: 1.5vw;
+                margin-top: 1vh;
+                font-size: 75%;
             }
+
+//ARTICLE 4, MEDIUM SIZE
+
+    //this controls images of article 4 (medium)
+            
+        .marketplace__article--img--div--size3 {
+            overflow: hidden;
+            grid-column: 1 / span 4;
+            grid-row: 1 / span 3;
+            display: flex;
+            }
+            .marketplace__article--img--size3 {
+                height: 100%;
+                width:100%;
+                object-fit: cover;
+                object-position: 50%;
+                }
+
+    //this controls text of article 4 (medium)   
+
+        .marketplace__article--title--size3 {
+            grid-row: 1;
+            align-self: end;
+            justify-self: start;
+            grid-column: 5 / span 2;
+            font-weight: bold ;
+            }
+
+            .marketplace__article--description--size3 {
+                grid-row: 2;
+                align-self: center;
+                grid-column: 5 / span 3;
+                justify-self: start;
+                margin-left: 1.5vw;
+                margin-top: 1vh;
+                font-size: 75%;
+            }
+
+
+
+    
+
+
 
 
 
