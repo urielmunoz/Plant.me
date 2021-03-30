@@ -77,7 +77,9 @@ traversally on the Website as variables but are not variables.*/
  this comes from css-tricks but has been heavily modded to fit my page
  kudos to them anyways. also. I chose not to style it to IE. 
  if you use IE you seriously need an intervention. 
- think about what you're doing, it's not too late!*/
+ think about what you're doing, it's not too late!
+ the only reason anyone should ever use IE 
+ is to download any other browser that isn't internet explorer.*/
 
     //cleaning out browser styles
 
@@ -106,11 +108,25 @@ traversally on the Website as variables but are not variables.*/
             background: $secondary_green;
             cursor: pointer;
             margin-top:-8px;
-            }
+            } // 4 opera, safari & chrome
             input[type=range]::-webkit-slider-thumb:hover{
                 background: $primary_grey;
                 transition-duration: 0.4s;
-                }
+                } // 4 opera, safari & chrome
+                input[type=range]::-moz-range-thumb {
+                    -webkit-appearance: none;
+                    border: 1px solid $secondary_green;
+                    height: 24px;
+                    width: 12px;
+                    border-radius: 6px;
+                    background: $secondary_green;
+                    cursor: pointer;
+                    margin-top:-8px;
+                    } // 4 mozzilla
+                        input[type=range]::-moz-range-thumb:hover{
+                            background: $primary_grey;
+                            transition-duration: 0.4s;
+                            } // 4 mozzilla
 
     // the track for the slider
 
@@ -121,13 +137,26 @@ traversally on the Website as variables but are not variables.*/
                 background: $secondary_grey;
                 border-radius: 8px;
             
-            }
-                
+            } // 4 opera, safari & chrome
+
             input[type=range]:hover::-webkit-slider-runnable-track {
                 background: $primary_green;
                 transition-duration: 0.4s;
-                }
+                } //4 opera, safari & chrome
 
+                input[type=range]::-moz-range-track {
+                width: 100%;
+                height: 8.4px;
+                cursor: pointer;
+                background: $secondary_grey;
+                border-radius: 8px;
+            
+                } // 4 mozzilla
+
+                    input[type=range]:hover::-moz-range-track {
+                        background: $primary_green;
+                        transition-duration: 0.4s;
+                        } // 4 mozzilla
 
 
 

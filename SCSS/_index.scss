@@ -1,6 +1,7 @@
 
 .index__image--background{
     max-width: 48vw;
+    max-height: 60vh; //because mozilla is a little bitch about sizes.
     grid-column: 6 / 11;
     grid-row: 5 / 11;
     overflow: hidden;            

@@ -32,12 +32,14 @@
         grid-column: 2;
         grid-row: 5;
         max-width: 10vw;
+        max-height: 10vh; //again lil' mozzilla.
         max-height: auto;
     }
     .search__image--Background{
         grid-column: 8/ 11;
         grid-row: 5 / 11;
         max-width: 30vw;
+        max-height: 30vh; //I hate your browser mozzilla foundation.
         opacity: 45%;
     } 
     .search__button {
