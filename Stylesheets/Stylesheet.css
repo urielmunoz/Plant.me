@@ -1093,10 +1093,9 @@ footer {
   transform: scale(0.99); }
 
 .productview__article--div {
-  margin-left: 2%;
   margin-top: 2%;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   overflow: hidden; }
 
 .productview__article--image {
