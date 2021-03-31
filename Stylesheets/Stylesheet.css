@@ -7,12 +7,22 @@
   font-family: 'mulish';
   font-weight: 600; }
 
-.text--header {
-  margin: 0.67em 0;
+.text__title--h2 {
+  font-size: 2vmax;
+  color: #696060;
   font-family: 'mulish';
-  font-size: xx-large;
-  font-weight: 700;
-  text-decoration: none; }
+  font-weight: 500; }
+
+.text__title--h3 {
+  font-size: 1vmax;
+  color: #bfbdbd;
+  font-family: 'mulish';
+  font-weight: 800; }
+
+.text__p--regular {
+  font-family: 'mulish';
+  size: .15vmax;
+  color: #696060; }
 
 .button--big {
   background-color: #5d8a32;
@@ -26,13 +36,15 @@
   font-weight: lighter;
   text-decoration: none;
   align-self: center;
-  text-align: center; }
+  text-align: center;
+  transition: all .2s ease-in-out; }
 
 .button--big:hover {
   background-color: transparent;
   border: 1px solid #68953e;
   color: #696060;
-  transition-duration: 0.4s; }
+  transition-duration: 0.4s;
+  transform: scale(0.8); }
 
 @media screen and (max-width: 799px) {
   .button--big {
@@ -216,7 +228,11 @@ header {
 
 .header__logo {
   max-width: 3.5vw;
-  justify-content: center; }
+  justify-content: center;
+  transition: all .2s ease-in-out; }
+
+.header__logo:hover {
+  transform: scale(0.9); }
 
 .header__menu {
   display: grid;
@@ -230,6 +246,15 @@ header {
 
 .header__menu--icon:hover {
   color: #5d8a32; }
+
+.header__menu--icon_fa {
+  color: #f0f0f0;
+  transition: all .2s ease-in-out;
+  font-size: 150%; }
+
+.header__menu--icon_fa:hover {
+  color: #5d8a32;
+  transform: scale(1.5); }
 
 main {
   grid-area: main;
@@ -260,6 +285,12 @@ footer {
 
 .footer__menu--icon:hover {
   color: #5d8a32; }
+
+.footer__menu--icon_fa {
+  transition: all .2s ease-in-out; }
+
+.footer__menu--icon_fa:hover {
+  transform: scale(2); }
 
 @media screen and (max-width: 799px) {
   .body--mediaquery {
@@ -474,7 +505,6 @@ footer {
 .login__background {
   width: 95vw;
   height: 100vh;
-  outline: solid red;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -662,16 +692,17 @@ footer {
 
 .marketplace__link {
   grid-row: 19;
-  grid-column: 18 / span 6;
-  align-self: end;
+  grid-column: 17 / span 6;
+  align-self: center;
+  justify-self: center;
   margin-top: 2vh;
   margin-left: 2vw;
-  font-size: .5rem; }
+  font-size: .5rem;
+  transition: all .2s ease-in-out; }
 
 .marketplace__link:hover {
-  font-weight: bolder;
   color: #5d8a32;
-  transform: scaleX(25vw); }
+  transform: scale(1.3); }
 
 .marketplace__article--link {
   font-family: 'mulish';
@@ -693,7 +724,7 @@ footer {
 .marketplace__article--small:hover {
   box-shadow: 8px 9px 12px 2px #bfbdbd;
   -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd;
-  transform: scale(1.1); }
+  transform: scale(0.99); }
 
 .marketplace__article--big {
   display: grid;
@@ -706,7 +737,7 @@ footer {
   box-shadow: 8px 9px 12px 2px #bfbdbd;
   -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd;
   transform: scaleX(25vw);
-  transform: scale(1.1); }
+  transform: scale(0.99); }
 
 .marketplace__article--medium {
   display: grid;
@@ -718,7 +749,7 @@ footer {
 .marketplace__article--medium:hover {
   box-shadow: 8px 9px 12px 2px #bfbdbd;
   -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd;
-  transform: scale(1.1); }
+  transform: scale(0.99); }
 
 .marketplace__article--img--div--size1 {
   grid-column: 1 / span 3;
@@ -955,3 +986,133 @@ footer {
 
 .contactus form div .btn-primary:hover {
   background-color: #68953e; }
+
+.productview__div--image {
+  z-index: 10;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 5;
+  overflow: hidden;
+  box-shadow: 2px 2px 30px #574c4cea;
+  -webkit-box-shadow: 2px 2px 30px #574c4cea; }
+
+.productview__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 20%; }
+
+.productview__section {
+  grid-column: 6 / span 6;
+  grid-row: 1 /span 4;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  z-index: 1; }
+
+.productview__aside {
+  grid-column: 6 /span 6;
+  grid-row: 5 / span 1;
+  z-index: 5;
+  box-shadow: 8px 9px 12px 2px #bfbdbd;
+  -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3%; }
+
+.productview__section--title {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 3; }
+
+.productview__section--product {
+  grid-column: 3 / span 10;
+  grid-row: 8 / span 3; }
+
+.productview__section--category {
+  color: #5d8a32; }
+
+.productview__section--description {
+  grid-column: 4 / span 11;
+  grid-row: 11 / span 3; }
+
+.productview__section--cost {
+  grid-column: 3;
+  grid-row: 17;
+  place-self: center; }
+
+.productview__section--pricepoint {
+  grid-row: 18;
+  color: #5d8a32;
+  font-weight: 600; }
+
+.productview__section--quantity--label {
+  grid-column: 12 / span 1;
+  grid-row: 17 / span 1;
+  font-size: 80%; }
+
+.productview__section--quantity {
+  grid-column: 12;
+  grid-row: 17;
+  place-self: center;
+  max-width: 4vw;
+  height: 3vh;
+  border-radius: 45px;
+  border: none;
+  text-align: center; }
+
+.productview__section--quantity:focus {
+  outline: transparent; }
+
+.productview__section--button {
+  grid-column: 14 / span 4;
+  grid-row: 17;
+  place-self: center;
+  font-size: 80%;
+  padding: 22px 20px; }
+
+.productview__aside--title {
+  transform: rotate(-90deg);
+  padding-bottom: 60%;
+  padding-left: 10%;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center; }
+
+.productview__aside--article {
+  margin-right: 2vw;
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: 1.5fr .2fr;
+  transition: all .2s ease-in-out; }
+
+.productview__aside--article:hover {
+  box-shadow: 8px 9px 12px 2px #bfbdbd;
+  -webkit-box-shadow: 8px 9px 12px 2px #bfbdbd;
+  cursor: pointer;
+  transform: scale(0.99); }
+
+.productview__article--div {
+  margin-left: 2%;
+  margin-top: 2%;
+  height: 90%;
+  width: 90%;
+  overflow: hidden; }
+
+.productview__article--image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.productview__article--title {
+  margin-top: 2%;
+  font-family: 'mulish';
+  font-weight: bold;
+  font-size: 90%;
+  color: #696060; }
+
+.productview__article--preview {
+  margin-bottom: 15%;
+  font-family: 'mulish';
+  font-size: .4rem;
+  color: #bfbdbd; }

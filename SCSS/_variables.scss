@@ -26,7 +26,7 @@
     //Shadow Variables
 
         $main_shadow: 2px 2px 30px $tertiary_grey;
-        $article_shadow: 8px 9px 12px 2px $secondary_grey; 
+        $secondary_shadow: 8px 9px 12px 2px $secondary_grey; 
    
     //text style variables 
  
@@ -37,13 +37,24 @@
             font-weight: 600;
         }
 
-        .text--header{
-            margin: 0.67em 0;
+        .text__title--h2{
+            font-size: 2vmax;
+            color: $text_grey;
             font-family: 'mulish';
-            font-size: xx-large;
-            font-weight: 700;
-            text-decoration: none; 
-            }
+            font-weight: 500;
+        }
+        .text__title--h3{
+            font-size: 1vmax;
+            color: $secondary_grey;
+            font-family: 'mulish';
+            font-weight: 800;
+        }
+
+        .text__p--regular{
+            font-family: 'mulish';
+            size: .15vmax;
+            color:$text_grey;
+        }
 
     //buttons used for main interactions.
 
@@ -60,6 +71,7 @@
         text-decoration:none;
         align-self: center;
         text-align: center;
+        transition: all .2s ease-in-out;
         }
 
             .button--big:hover{
@@ -67,6 +79,7 @@
                 border: 1px solid $secondary_green;
                 color:$text_grey;
                 transition-duration: 0.4s;
+                transform: scale(.8);
             }
         @media screen and (max-width:799px) {
             .button--big{
@@ -226,15 +239,6 @@
 
 
 
-
- //   background-color: #5d8a32;
- //border-radius:33px;
- //cursor:pointer;
- //color:#f0f0f0;
- //font-family:Verdana;
- //font-size:2vmax;
- //font-weight:bold;rgba(0,0,0,0.75)
- //       
 
 
 
