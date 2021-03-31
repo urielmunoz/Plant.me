@@ -330,6 +330,8 @@ footer {
   .header__menu--icon_fa {
     color: #f0f0f0;
     font-size: medium; }
+  .header__menu--icon_fa:hover {
+    color: #f0f0f0; }
   .main--mediaquery {
     display: flex;
     flex-direction: column;
@@ -858,7 +860,8 @@ footer {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: flex-start; } }
+    align-items: flex-start;
+    max-height: 30vh; } }
 
 .contactus__img--background {
   filter: grayscale(100%);
@@ -1142,6 +1145,8 @@ footer {
   color: #bfbdbd; }
 
 @media screen and (max-width: 799px) {
+  .productview__image {
+    height: 40vh; }
   .productview__aside {
     display: none; }
   .productview__section {

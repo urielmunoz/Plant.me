@@ -195,6 +195,9 @@
                             color: #f0f0f0;
                             font-size: medium;
                             }
+                        .header__menu--icon_fa:hover{
+                            color: $primary_grey;
+                        }
             
                 .main--mediaquery {
                     display: flex;
