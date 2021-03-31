@@ -24,79 +24,101 @@
 
         </header>
 
-<main >
+<main class="main--mediaquery">
         
-    <img class="contactus_img_background" src="images/map.png" alt="MAP">
+    <img class="contactus__img--background" src="images/map.png" alt="MAP">
 
-    <section class="contactus_section">
+    <section class="contactus__section">
         
-      <h1 class="form_title">Contactanos</h1>  
+      <h1 class="form__title text__title--h1">Contact Us</h1>  
 
-      <form class="section_form">
-        <div class="section_form-1">
-          <div class="form_div--text">
-            <label for="name" class="form--label">Nombre</label>
-            <input type="text" class="form_input-text" id="formInputText">
+      <form class="contactus__form">
+
+        <div class="form__section1">
+        
+            <div class="form__div--text">
+          
+              <label for="name" class="form--label">Name</label>
+              <input type="text" class="form--input" id="">
+          
             </div>
-          <div class="form_div--text">
-            <label for="surname" class="form--label">Apellido</label>
-          <input type="text" class="form_input-text" id="formInputText"> 
+          
+            <div class="form__div--text">
+            
+              <label for="surname" class="form--label">Surname</label>
+              <input type="text" class="form--input" id=""> 
+              
             </div>
+        
+            <div class="form__div--text">
+          
+              <label for="inputEmail4" class="form--label">Email</label>
+              <input type="email" class="form--input" id="">
+        
+            </div>
+          
+            <div class="form__div--text">
+            
+              <label for="tel" class="form--label">Phone</label>
+            
+              <input type="tel" class="form--input" id="">
+            
+            </div>
+      
         </div>
 
-      <div class="section_form-1">
-            <div class="form_div--text">
-                <label for="inputEmail4" class="form--label">Email</label>
-                <input type="email" class="form_input-text" id="formInputText">
-              </div>
-          
-            <div class="form_div--text">
-                <label for="tel" class="form--label">Teléfono</label>
-                <input type="tel" class="form_input-text" id="formInputText">
-              </div>
+      <div class="form__div--adress">
+            <label for="inputAddress" class="form--label">Address</label>
+            <input type="text" class="form--input--address" id="" 
+              placeholder="1234 Main St, apartment, studio, or floor">
       </div>
 
-      <div class="form_div--adress">
-            <label for="inputAddress" class="form--label">Dirección</label>
-            <input type="text" class="form--input" id="formInputTextAdress" placeholder="1234 Main St">
-        </div>
-      <div class="form_div--adress">
-            <label for="inputAddress2" class="form--label">Departamento, Piso</label>
-            <input type="text" class="form--input" id="formInputTextAdress2" placeholder="Apartment, studio, or floor">
-        </div>
-      <div class="section_form-2">   
-            <div class="form_div--text">
-              <label for="inputCity" class="form--label">Ciudad</label>
-              <input type="text" class="form--input" id="formInputCity">
-              </div>
-            <div class="form_div--select">
-              <label for="inputState" class="form--label">Provincia</label>
+      <div class="form__section1">   
+
+            <div class="form__div--text">
+        
+              <label for="inputCity" class="form--label form--label--city ">City</label>
+        
+              <input type="text" class="form--input--city" id="">
+        
+            </div>
+        
+            <div class="form__div--select">
+        
+              <label for="inputState" class="form--label">State</label>
+        
               <select id="inputState" class="form--select">
                 <option selected>Choose...</option>
-                <option>...</option>
+                <option>Illinois</option>
+                <option>New York</option>
+                <option>California</option>
               </select>
-              </div>
-            <div class="form_div--zip">
-              <label for="inputZip" class="form--label">Código Postal</label>
-              <input type="text" class="form--input" id="formInputZip">
-              </div>
-          </div>
 
-      <div class="form_div--textarea">
-          <textarea class="form_textarea--input" placeholder="Leave a comment here" id="FormInputTextArea" style="height: 100px"></textarea>
-          <label for="floatingTextarea2" class="form_textarea--label">Comentarios</label>
+            </div>
+            
+            <div class="form__div--zip">
+              <label for="inputZip" class="form--label">Zip</label>
+              <input type="text" class="form--input--zip" id="">
+              </div>
+        </div>
+
+      <div class="form__div--textarea">
+        
+        <label for="floatingTextarea2" class="form--label form--label--textarea">Comments</label>  
+        <textarea class="form__textarea--input" placeholder="Leave a comment here" id=""></textarea>
+  
       </div>
 
-          <div class="form_div--switch">
-              <input class="switch--input" type="checkbox" id="formSwitchDefaultOff">
-              <label class="switch--label" for="formSwitchDefaultOff">Subscribirme al Newsletter</label>
-          </div>     
+      <div class="form__div--checkbox">
+      
+        <input class="checkbox--input" type="checkbox" id="switch">
+      
+        <label class="checkbox--label" for="switch">Keep me posted</label>
+      
+      </div>     
 
-          <div class="col-12">
           
-            <input type="submit" class="btn btn-primary">
-          
-        </div>
+       <input type="submit" class="button--big form--button">
         
     </form>
         

@@ -28,6 +28,15 @@
         text-decoration: none;
         font-family: 'mulish';
         }
+    input:focus{
+        outline: transparent;
+    }
+    select:focus{
+        outline: transparent;
+    }
+    textarea:focus{
+        outline: transparent;
+    }
 
 //body skeleton_______________________________________________________________
 
