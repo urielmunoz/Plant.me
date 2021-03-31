@@ -244,8 +244,21 @@
             }
 
 
-
-    
+            @media screen and (max-width:799px) {
+                .marketplace__main--grid{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+                .marketplace__article__mq{
+                    margin-top: 2vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+            }
 
 
 

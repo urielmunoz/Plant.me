@@ -847,6 +847,19 @@ footer {
   margin-top: 1vh;
   font-size: 75%; }
 
+@media screen and (max-width: 799px) {
+  .marketplace__main--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .marketplace__article__mq {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start; } }
+
 .contactus__img--background {
   filter: grayscale(100%);
   z-index: 1;
@@ -1127,3 +1140,15 @@ footer {
   font-family: 'mulish';
   font-size: .4rem;
   color: #bfbdbd; }
+
+@media screen and (max-width: 799px) {
+  .productview__aside {
+    display: none; }
+  .productview__section {
+    grid-column: 6 / span 6;
+    grid-row: 1 /span 4;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(20, 0.5fr);
+    grid-template-rows: repeat(20, 0.5fr);
+    z-index: 1; } }

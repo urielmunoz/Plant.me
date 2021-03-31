@@ -161,3 +161,17 @@
                     color: $secondary_grey;
                     }
 
+                    @media screen and (max-width:799px) {
+                        .productview__aside{
+                            display:none
+                        }
+                        .productview__section{
+                            grid-column: 6 / span 6;
+                            grid-row: 1 /span 4;
+                            background-color:transparent;
+                            display: grid;
+                            grid-template-columns: repeat(20, .5fr);
+                            grid-template-rows: repeat(20, .5fr);
+                            z-index: 1;
+                        }
+                    }
